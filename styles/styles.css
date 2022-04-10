@@ -397,17 +397,17 @@ section {
 }
 
 /*Timeline*/
-.timeline2 {
+.skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
 }
-.timeline2 .timeline-item {
+.skills .timeline-item {
   position: relative;
   padding-left: 3rem;
 }
-.timeline2 .timeline-item .tl-icon {
+.skills .timeline-item .tl-icon {
   position: absolute;
   left: -27px;
   top: 0;
@@ -419,10 +419,10 @@ section {
   align-items: center;
   justify-content: center;
 }
-.timeline2 .timeline-item .tl-icon i {
+.skills .timeline-item .tl-icon i {
   font-size: 1.3rem;
 }
-.timeline2 .timeline-item .tl-duration {
+.skills .timeline-item .tl-duration {
   padding: 0.2rem 0.6rem;
   background-color: var(--color-grey-5);
   border-radius: 15px;
@@ -431,33 +431,33 @@ section {
   text-transform: uppercase;
   font-weight: 500;
 }
-.timeline2 .timeline-item h5 {
+.skills .timeline-item h5 {
   padding: 1rem 0;
   font-size: 1.3rem;
   font-weight: 600;
 }
-.timeline2 .timeline-item h5 span {
+.skills .timeline-item h5 span {
   color: var(--color-grey-2);
   font-weight: 500;
   font-size: 1.2rem;
 }
-.timeline2 .timeline-item p {
+.skills .timeline-item p {
   color: var(--color-grey-2);
 }
 
 
 /*Timeline*/
-.timeline3 {
+.volunteer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
 }
-.timeline3 .timeline-item {
+.volunteer .timeline-item {
   position: relative;
   padding-left: 3rem;
 }
-.timeline3 .timeline-item .tl-icon {
+.volunteer .timeline-item .tl-icon {
   position: absolute;
   left: -27px;
   top: 0;
@@ -469,10 +469,10 @@ section {
   align-items: center;
   justify-content: center;
 }
-.timeline3 .timeline-item .tl-icon i {
+.volunteer .timeline-item .tl-icon i {
   font-size: 1.3rem;
 }
-.timeline3 .timeline-item .tl-duration {
+.volunteer .timeline-item .tl-duration {
   padding: 0.2rem 0.6rem;
   background-color: var(--color-grey-5);
   border-radius: 15px;
@@ -481,17 +481,17 @@ section {
   text-transform: uppercase;
   font-weight: 500;
 }
-.timeline3 .timeline-item h5 {
+.volunteer .timeline-item h5 {
   padding: 1rem 0;
   font-size: 1.3rem;
   font-weight: 600;
 }
-.timeline3 .timeline-item h5 span {
+.volunteer .timeline-item h5 span {
   color: var(--color-grey-2);
   font-weight: 500;
   font-size: 1.2rem;
 }
-.timeline3 .timeline-item p {
+.volunteer .timeline-item p {
   color: var(--color-grey-2);
 }
 .port-text {
