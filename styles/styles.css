@@ -1052,10 +1052,6 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .skills {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .timeline {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1072,6 +1068,8 @@ section {
 }
 
 .other-skills{
+  /*color: White;*/
+  /*white-space: nowrap;*/
   text-align: center;
 
 }
