@@ -626,9 +626,11 @@ section {
   display: flex;
   padding-top: 3.5rem;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .contact-content-con .left-contact {
-  flex: 2;
+  flex: 1;
   align-items: center;
 }
 .contact-content-con .left-contact h4 {
