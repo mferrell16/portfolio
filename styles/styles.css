@@ -1077,7 +1077,10 @@ section {
   /*color: White;*/
   /*white-space: nowrap;*/
   text-align: center;
+}
 
+.about-me{
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
