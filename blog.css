@@ -319,3 +319,61 @@ footer nav a.active {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
+
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #191d2b;
+}
+
+.coming-soon-title {
+  font-size: 3rem;
+  color: #c0aee0;
+  font-weight: 700;
+}
+
+/* Home section responsive tweaks */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .home-left,
+  .home-right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .home-left {
+    margin-bottom: 2rem;
+  }
+
+  .home-right h1 {
+    font-size: 2rem;
+  }
+
+  .main-btn {
+    justify-content: center;
+  }
+
+  .side-nav {
+    right: 1rem;
+    top: auto;
+    bottom: 2rem;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
