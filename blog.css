@@ -308,3 +308,14 @@ footer nav a.active {
   filter: grayscale(0%) brightness(1.1);
   transform: scale(1.05);
 }
+
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.blog-card-link:hover .blog-card {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
