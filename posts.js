@@ -5,7 +5,7 @@ export const posts = [
       alt: 'Gandalf',
       title: 'Prompt Hacking Gandalf AI',
       desc: 'Use prompt injection to bypass Gandalf AI.',
-      type: 'prompt'
+      type: 'aws'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-w1seguy-726d45081a4c',
@@ -13,7 +13,7 @@ export const posts = [
       alt: 'W1seGuy',
       title: 'Tryhackme W1seGuy',
       desc: 'This room is a CTF style cryptography challenge that focuses on the XOR operator.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-traverse-f9959c945738',
@@ -21,7 +21,7 @@ export const posts = [
       alt: 'Traverse',
       title: 'Tryhackme Traverse',
       desc: 'This room is a CTF style application security challenge that includes API hacking, python scripting, and command injection.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-uranium-ba67a0697a21',
@@ -29,7 +29,7 @@ export const posts = [
       alt: 'Uranium',
       title: 'Tryhackme Uranium CTF',
       desc: 'This room includes OSINT, phishing, wireshark forensics, and SUIDs.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-brooklyn-nine-nine-3765baeb3f73',
@@ -37,7 +37,7 @@ export const posts = [
       alt: 'Brooklyn Nine Nine',
       title: 'Tryhackme Brooklyn Nine Nine',
       desc: 'This is a beginner room that includes anonymous ftp login, steganography, and linux privilege escalation.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-attacktive-directory-8a4eeee05ea4',
@@ -45,7 +45,7 @@ export const posts = [
       alt: 'TraAttacktive Directoryverse',
       title: 'Tryhackme Attacktive Directory',
       desc: 'This room covers exploiting an active directory domain controller.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-looking-glass-767626f60858',
@@ -53,7 +53,7 @@ export const posts = [
       alt: 'Looking Glass',
       title: 'Tryhackme Looking Glass',
       desc: 'This room covers cryptography, linux enumeration, lateral and vertical privilege escalation.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-nerdherd-room-b6a8ec0bab05',
@@ -61,7 +61,7 @@ export const posts = [
       alt: 'NerdHerd',
       title: 'Tryhackme NerdHerd',
       desc: 'This room is a ctf style challenge that covers ftp anonymous login, smb enumeration, vigenere ciphers, and a linux kernel privilege escalation.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-git-happens-823dfe87cf0b',
@@ -69,7 +69,7 @@ export const posts = [
       alt: 'Git Happens',
       title: 'Tryhackme Git Happens',
       desc: 'This room covers enumerating a public git repository.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-kenobi-room-46965d0d4501',
@@ -77,7 +77,7 @@ export const posts = [
       alt: 'Kenobi',
       title: 'Tryhackme Kenobi',
       desc: 'This room covers samba enumeration, ftp exploitation, and linux privilege escalation.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-wonderland-dafcc5a3efc',
@@ -85,7 +85,7 @@ export const posts = [
       alt: 'Wonderland',
       title: 'Tryhackme Wonderland',
       desc: 'This room covers python library hijacking, linux enumeration, and privilege escalation.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-inclusion-room-d84cabfedf14',
@@ -93,7 +93,7 @@ export const posts = [
       alt: 'Inclusion',
       title: 'Tryhackme Inclusion',
       desc: 'This room is for practice with Local File Inclusion (LFI) attacks.',
-      type: 'CTF'
+      type: 'ctf'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-easy-peasy-writeup-e688da86044b',
@@ -101,6 +101,6 @@ export const posts = [
       alt: 'Easy Peasy',
       title: 'Tryhackme Easy Peasy',
       desc: 'This room is for practice locating a hidden directory to get initial access to a vulnerable machine, and escalating privileges using a crontab.',
-      type: 'CTF'
+      type: 'ctf'
     }
 ]

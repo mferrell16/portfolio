@@ -1,19 +1,40 @@
 import { posts } from "./posts.js";
 const blogPostSection = document.getElementById("blog-post-section");
+const allBtn = document.getElementById("all-btn");
+const ctfBtn = document.getElementById("ctf-btn");
+const awsBtn = document.getElementById("aws-btn");
+let postsToRender = "all";
 const currentYear = new Date().getFullYear();
 
+allBtn.addEventListener("click", () => {
+  postsToRender = "all";
+  renderPosts();
+})
+
+ctfBtn.addEventListener("click", () => {
+  postsToRender = "ctf";
+  renderPosts();
+})
+
+awsBtn.addEventListener("click", () => {
+  postsToRender = "aws";
+  renderPosts();
+})
 function getBlogPostsHtml() {
   return posts.map((post) => {
-    return `
+    if (post.type === postsToRender || postsToRender === "all") {
+      return `
             <a href="${post.link}" class="flex flex-1">
                 <div class="group w-full bg-[#2a2e35] rounded-lg overflow-hidden transition duration-300 hover:-translate-y-1">
                     <img class="w-full h-[200px] object-cover md:grayscale-55 transition duration-300 ease-in-out group-hover:grayscale-0" alt="${post.alt}" src="${post.src}" />
                     <div class="px-4 pb-4">
-                        <h2 class="font-bold text-[var(--primary-color)] text-xl my-4">${post.title}</h2>
+                        <h2 class="font-bold text-[var(--primary-color)] text-xl mt-4">${post.title}</h2>
+                        <p class="bg-[var(--primary-color)] px-3 py-1 rounded-2xl text-sm inline-block my-4">${post.type}</p>
                         <p>${post.desc}</p>
                     </div>
                 </div>
             </a>`;
+    }
   });
 }
 
