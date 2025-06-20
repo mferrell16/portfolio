@@ -30,7 +30,7 @@ function getBlogPostsHtml() {
   return posts.map((post) => {
     if (post.type === postsToRender || postsToRender === "all") {
       return `
-            <a href="${post.link}" class="flex flex-1">
+            <a href="${post.link}" target="_blank" class="flex flex-1">
                 <div class="group w-full bg-[#2a2e35] rounded-lg overflow-hidden transition duration-300 hover:-translate-y-1">
                     <img class="w-full h-[200px] object-cover md:grayscale-55 transition duration-300 ease-in-out group-hover:grayscale-0" alt="${post.alt}" src="${post.src}" />
                     <div class="px-4 pb-4">

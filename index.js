@@ -1,14 +1,16 @@
 import { posts } from "./posts.js";
 const featuredPosts = document.getElementById("featured-posts");
-const latestPosts = posts.slice(0, 3);
 
 const currentYear = new Date().getFullYear();
-
 // Index.html
 function getFeaturedPostsHtml() {
-  return latestPosts.map((post) => {
-    return `
-            <a href="${post.link}" class="flex flex-1">
+  const filteredPosts = posts.filter((post) => {
+    return post.type === "TryHackMe" || post.type === "AI";
+  })
+  return filteredPosts.map((post) => {
+    if (post.type === "TryHackMe" || post.type === "AI") {
+      return `
+            <a href="${post.link}" target="_blank" class="flex flex-1">
                 <div class="group w-full bg-[#2a2e35] rounded-lg overflow-hidden duration-300 hover:-translate-y-1">
                     <img class="w-full h-[200px] object-cover md:grayscale-55 transition duration-300 ease-in-out group-hover:grayscale-0" alt="${post.alt}" src="${post.src}" />
                     <div class="px-4 pb-4">
@@ -18,7 +20,8 @@ function getFeaturedPostsHtml() {
                     </div>
                 </div>
             </a>`;
-  });
+    }
+  }).slice(0, 3);
 }
 
 function renderFeatured() {
