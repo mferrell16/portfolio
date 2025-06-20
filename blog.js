@@ -1,8 +1,9 @@
 import { posts } from "./posts.js";
 const blogPostSection = document.getElementById("blog-post-section");
 const allBtn = document.getElementById("all-btn");
-const ctfBtn = document.getElementById("ctf-btn");
+const thmBtn = document.getElementById("thm-btn");
 const awsBtn = document.getElementById("aws-btn");
+const aiBtn = document.getElementById("ai-btn");
 let postsToRender = "all";
 const currentYear = new Date().getFullYear();
 
@@ -11,13 +12,18 @@ allBtn.addEventListener("click", () => {
   renderPosts();
 })
 
-ctfBtn.addEventListener("click", () => {
-  postsToRender = "ctf";
+thmBtn.addEventListener("click", () => {
+  postsToRender = "TryHackMe";
   renderPosts();
 })
 
 awsBtn.addEventListener("click", () => {
-  postsToRender = "aws";
+  postsToRender = "AWS";
+  renderPosts();
+})
+
+aiBtn.addEventListener("click", () => {
+  postsToRender = "AI";
   renderPosts();
 })
 function getBlogPostsHtml() {
