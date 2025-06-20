@@ -1,38 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makayla Ferrell | Contact</title>
-  <link rel="stylesheet" href="blog.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <section class="contact-section">
-    <div class="main-title">
-      <h1>CONTACT <span>ME</span></h1>
-    </div>
-    <div class="contact-icons">
-      <a href="mailto:makayla.b.ferrell@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/mferrell16" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/makayla.ferrell/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/_mky613" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/makayla-ferrell" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <nav class="bottom-nav">
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  
+    <title>Contact</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!--  Mobile Header  -->
+    <header
+      class="container mx-auto flex justify-between items-center my-5 px-6 md:hidden"
+    >
+      <a class="text-lg font-bold" href="./index.html"
+        >M<span class="text-[var(--primary-color)]">D</span></a
+      >
+      <svg
+        class="cursor-pointer"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="var(--primary-color)"
+        id="hamburger"
+      >
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
+      <!-- Mobile Nav Menu -->
 
-  <script src="blog.js"></script>
+      <nav
+        id="mobile-nav"
+        class="my-5 px-6 hidden absolute top-0 left-0 w-full h-screen bg-[#191d2b] transform -translate-y-full opacity-0 transition-all duration-300 ease-in-out"
+      >
+        <div class="container mx-auto flex flex-col gap-4">
+          <div class="flex justify-end px-6">
+            <svg
+              class="cursor-pointer flex justify-end"
+              id="close-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="var(--primary-color)"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </div>
+          <ul class="flex flex-col gap-4 items-center justify-center">
+            <li
+              class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./coming-soon.html">About</a>
+            </li>
+            <li
+              class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./blog.html">Blog</a>
+            </li>
+            <li
+              class="ml-2 order-2 border-transparent bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] hover:text-[white] rounded-md px-2 py-1 duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileNav = document.getElementById("mobile-nav");
+      const closeMenu = document.getElementById("close-menu");
 
-  
-</body>
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+        document.body.classList.add("overflow-hidden");
+        requestAnimationFrame(() => {
+          mobileNav.classList.add("opacity-100");
+          mobileNav.classList.remove("-translate-y-full");
+        });
+      });
+
+      closeMenu.addEventListener("click", () => {
+        document.body.classList.remove("overflow-hidden");
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Medium+ sized header -->
+    <header class="hidden md:block flex max-sm:px-6 my-5">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a
+          href="./index.html"
+          class="border-2 border-transparent text-lg font-bold"
+          >Makayla <span class="text-[#c0aee0]">Decoded</span></a
+        >
+        <ul class="flex gap-4 items-center">
+          <li
+            class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+          >
+            <a href="./index.html">Home</a>
+          </li>
+          <li
+            class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+          >
+            <a href="./coming-soon.html">About</a>
+          </li>
+          <li
+            class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+          >
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li
+            class="ml-2 order-2 border-transparent bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] hover:text-[white] rounded-md px-2 py-1 duration-300 ease-in-out"
+          >
+            <a href="./contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="container mx-auto max-sm:px-6 flex-1 flex flex-col items-center"
+    >
+      <h1 class="text-center text-4xl font-bold my-10">
+        Contact <span class="text-[var(--primary-color)]">Me</span>
+      </h1>
+      <div class="flex align-center justify-center gap-4 container mx-auto">
+        <a
+          class="bg-[#2a2e35] text-[#fff] w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-[#191d2b] hover:bg-[#c0aee0]"
+          href="mailto:makayla.b.ferrell@gmail.com"
+          target="_blank"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a
+          class="bg-[#2a2e35] text-[#fff] w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-[#191d2b] hover:bg-[#c0aee0]"
+          href="https://github.com/mferrell16"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="bg-[#2a2e35] text-[#fff] w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-[#191d2b] hover:bg-[#c0aee0]"
+          href="https://www.instagram.com/makayla.ferrell/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          class="bg-[#2a2e35] text-[#fff] w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-[#191d2b] hover:bg-[#c0aee0]"
+          href="https://twitter.com/_mky613"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          class="bg-[#2a2e35] text-[#fff] w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-[#191d2b] hover:bg-[#c0aee0]"
+          href="https://www.linkedin.com/in/makayla-ferrell"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>
-

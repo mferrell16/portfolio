@@ -1,37 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makayla Ferrell | Home</title>
-  <link rel="stylesheet" href="blog.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <section class="home-section">
-    <div class="home-left">
-      <img src="img/grad.jpg" alt="Makayla Ferrell Graduation">
-    </div>
-    <div class="home-right">
-      <h1>Hi, I'm <span>Makayla Ferrell.</span><br>This is my life decoded.</h1>
-      <p>
-        I am a software engineer, graduate school student, and ethical hacker. This website hosts my hacking write-ups, information about me, and ways to get in touch. Click around to learn more!
-      </p>
-      <a href="img/Makayla_Ferrell_Resume.pdf" download="Makayla_Ferrell_Resume.pdf" target="_blank" class="main-btn">
-        <span class="btn-text">Download Resume</span>
-        <span class="btn-icon"><i class="fas fa-download"></i></span>
-      </a>
-    </div>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Makayla Decoded</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--  Mobile Header  -->
+    <header
+      class="container mx-auto flex justify-between items-center my-5 px-6 md:hidden"
+    >
+      <a class="text-lg font-bold" href="./index.html"
+        >M<span class="text-[var(--primary-color)]">D</span></a
+      >
+      <svg
+        class="cursor-pointer"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="var(--primary-color)"
+        id="hamburger"
+      >
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
+      <!-- Mobile Nav Menu -->
 
-  <div class="side-nav">
-    <a href="home.html" class="nav-btn active"><i class="fas fa-home"></i></a>
-    <a href="blog.html" class="nav-btn"><i class="far fa-newspaper"></i></a>
-    <a href="contact.html" class="nav-btn"><i class="fas fa-envelope-open"></i></a>
-  </div>
+      <nav
+        id="mobile-nav"
+        class="my-5 px-6 hidden absolute top-0 left-0 w-full h-screen bg-[#191d2b] transform -translate-y-full opacity-0 transition-all duration-300 ease-in-out"
+      >
+        <div class="container mx-auto flex flex-col gap-4">
+          <div class="flex justify-end px-6">
+            <svg
+              class="cursor-pointer flex justify-end"
+              id="close-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="var(--primary-color)"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </div>
+          <ul class="flex flex-col gap-4 items-center justify-center">
+            <li
+              class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./coming-soon.html">About</a>
+            </li>
+            <li
+              class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./blog.html">Blog</a>
+            </li>
+            <li
+              class="ml-2 order-2 border-transparent bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] hover:text-[white] rounded-md px-2 py-1 duration-300 ease-in-out"
+            >
+              <a class="text-lg" href="./contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileNav = document.getElementById("mobile-nav");
+      const closeMenu = document.getElementById("close-menu");
 
-  <script src="blog.js"></script>
-</body>
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+        document.body.classList.add("overflow-hidden");
+        requestAnimationFrame(() => {
+          mobileNav.classList.add("opacity-100");
+          mobileNav.classList.remove("-translate-y-full");
+        });
+      });
+
+      closeMenu.addEventListener("click", () => {
+        document.body.classList.remove("overflow-hidden");
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Medium+ sized header -->
+    <header class="hidden md:block flex max-sm:px-6 my-5">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a
+          href="./index.html"
+          class="border-2 border-transparent text-lg font-bold"
+          >Makayla <span class="text-[#c0aee0]">Decoded</span></a
+        >
+        <ul class="flex gap-4 items-center">
+          <li
+            class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+          >
+            <a href="./index.html">Home</a>
+          </li>
+          <li
+            class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+          >
+            <a href="./coming-soon.html">About</a>
+          </li>
+          <li
+            class="border-2 border-transparent hover:border-b-[#c0aee0] transition-colors duration-300 ease-in-out"
+          >
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li
+            class="ml-2 order-2 border-transparent bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] hover:text-[white] rounded-md px-2 py-1 duration-300 ease-in-out"
+          >
+            <a href="./contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="container mx-auto mb-10 gap-6 max-sm:px-6 flex flex-col justify-center items-center md:flex-row md:justify-between"
+      >
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-4xl font-bold mb-8 leading-12">
+            Hi, I'm
+            <span class="text-[var(--primary-color)]">Makayla Ferrell.</span>
+            <br />This is my life
+            <span class="text-[var(--primary-color)]">Decoded.</span>
+          </h1>
+          <p class="text-[var(--gray-font)]">
+            I am a software engineer, graduate school student, and ethical
+            hacker. This website hosts my hacking write-ups, information about
+            me, and ways to get in touch. Click around to learn more!
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            class="rounded-lg"
+            src="img/grad.JPG"
+            alt="Makayla Ferrell graduation photo"
+          />
+        </div>
+      </section>
+      <!-- Latest Blogs -->
+      <section class="container mx-auto max-sm:px-6 mb-10">
+        <h2 class="text-2xl font-bold mb-4">Latest Blog Posts</h2>
+        <div class="flex flex-col gap-4 md:flex-row" id="featured-posts"></div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
