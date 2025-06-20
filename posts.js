@@ -1,5 +1,45 @@
 export const posts = [
     {
+      link: 'https://medium.com/@makayla.b.ferrell/s3-enumeration-basics-acrtp-6e1df9ecbb07',
+      src: 'img/blog1.jpg',
+      alt: 'ACRTP',
+      title: 'S3 Enumeration Basics (ACRTP)',
+      desc: 'This is a walkthrough of the S3 Enumeration Basics lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      type: 'AWS'
+    },
+    {
+      link: 'https://medium.com/@makayla.b.ferrell/intro-to-aws-iam-enumeration-acrtp-c0e140ebc9d8',
+      src: 'img/blog1.jpg',
+      alt: 'ACRTP',
+      title: 'Intro to AWS IAM Enumeration (ACRTP)',
+      desc: 'This is a walkthrough of the Intro to AWS IAM Enumeration lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      type: 'AWS'
+    },
+    {
+      link: 'https://medium.com/@makayla.b.ferrell/identifying-the-aws-account-id-from-a-public-s3-bucket-acrtp-0f93e538e731',
+      src: 'img/blog1.jpg',
+      alt: 'ACRTP',
+      title: 'Identifying the AWS Account ID from a Public S3 Bucket (ACRTP)',
+      desc: 'This is a walkthrough of the Identifying the AWS Account ID from a Public S3 Bucket lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      type: 'AWS'
+    },
+    {
+      link: 'https://medium.com/@makayla.b.ferrell/looting-public-ebs-snapshots-acrtp-ec1732d5cf89',
+      src: 'img/blog1.jpg',
+      alt: 'ACRTP',
+      title: 'Looting Public EBS Snapshots (ACRTP)',
+      desc: 'This is a walkthrough of the Looting Public EBS Snapshots lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      type: 'AWS'
+    },
+    {
+      link: 'https://medium.com/@makayla.b.ferrell/acrtp-hunting-for-secrets-in-git-repos-b31d8e635d07',
+      src: 'img/blog1.jpg',
+      alt: 'ACRTP',
+      title: 'Hunting for Secrets in Git Repos (ACRTP)',
+      desc: 'This is a walkthrough of the Hunting for Secrets in Git Repos lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      type: 'AWS'
+    },
+    {
       link: 'https://medium.com/@makayla.b.ferrell/tryhackme-w1seguy-726d45081a4c',
       src: 'img/gandalf.png',
       alt: 'Gandalf',
