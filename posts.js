@@ -39,6 +39,14 @@ export const posts = [
     desc: 'Using IAM policy and aws-enumerator to escalate privileges within an AWS environment.',
     type: 'AWS'
   },
+   {
+      link: 'https://medium.com/@makayla.b.ferrell/identifying-the-aws-account-id-from-a-public-s3-bucket-acrtp-0f93e538e731',
+      src: 'img/aws3.jpg',
+      alt: 'ACRTP',
+      title: 'Identifying the AWS Account ID from a Public S3 Bucket',
+      desc: 'Understanding the s3-account-search tool.',
+      type: 'AWS'
+    },
     {
       link: 'https://medium.com/@makayla.b.ferrell/acrtp-hunting-for-secrets-in-git-repos-b31d8e635d07',
       src: 'img/gitaws.png',
@@ -61,14 +69,6 @@ export const posts = [
       alt: 'ACRTP',
       title: 'Intro to AWS IAM Enumeration',
       desc: 'Get comfortable with AWS Identity and Access Management (IAM) using the AWS CLI.',
-      type: 'AWS'
-    },
-    {
-      link: 'https://medium.com/@makayla.b.ferrell/identifying-the-aws-account-id-from-a-public-s3-bucket-acrtp-0f93e538e731',
-      src: 'img/aws3.jpg',
-      alt: 'ACRTP',
-      title: 'Identifying the AWS Account ID from a Public S3 Bucket',
-      desc: 'Understanding the s3-account-search tool.',
       type: 'AWS'
     },
     {
