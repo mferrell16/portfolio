@@ -9,7 +9,7 @@ export const posts = [
   },
   {
     link: 'https://medium.com/@makayla.b.ferrell/ssrf-to-pwned-acrtp-103a79ac28c7',
-    src: 'img/ssrf.png',
+    src: 'img/aws2.jpg',
     alt: 'ACRTP',
     title: 'SSRF to Pwned',
     desc: 'Exploiting a Server-Side Request Forgery (SSRF) vulnerability to extract sensitive files from an S3 bucket.',
@@ -17,7 +17,7 @@ export const posts = [
   },
    {
       link: 'https://medium.com/@makayla.b.ferrell/looting-public-ebs-snapshots-acrtp-ec1732d5cf89',
-      src: 'img/aws.jpg',
+      src: 'img/dataE.png',
       alt: 'ACRTP',
       title: 'Looting Public EBS Snapshots',
       desc: 'Enumerating EBS snapshots and exfiltrating data.',
