@@ -1,7 +1,7 @@
 export const posts = [
 	{
     link: 'https://medium.com/@makayla.b.ferrell/bypass-restrictions-in-api-gateway-acrtp-783a2f3b7400',
-    src: 'img/apiG.png',
+    src: 'img/ApiG.png',
     alt: 'ACRTP',
     title: 'Bypass Restrictions in API Gateway',
     desc: 'Using AWS API Gateway misconfigurations to gain unauthorized access to production environments.',
@@ -9,7 +9,7 @@ export const posts = [
   },
   {
     link: 'https://medium.com/@makayla.b.ferrell/ssrf-to-pwned-acrtp-103a79ac28c7',
-    src: 'img/ssrf.jpeg',
+    src: 'img/ssrf.png',
     alt: 'ACRTP',
     title: 'SSRF to Pwned',
     desc: 'Exploiting a Server-Side Request Forgery (SSRF) vulnerability to extract sensitive files from an S3 bucket.',
@@ -49,10 +49,10 @@ export const posts = [
     },
   {
       link: 'https://medium.com/@makayla.b.ferrell/s3-enumeration-basics-acrtp-6e1df9ecbb07',
-      src: 'img/awss3.jpg',
+      src: 'img/aws6.jpg',
       alt: 'ACRTP',
       title: 'S3 Enumeration Basics',
-      desc: 'This is a walkthrough of the S3 Enumeration Basics lab from PwnedLabs.',
+      desc: 'CTF-style challenge focused on S3 enumeration and credential exfiltration.',
       type: 'AWS'
     },
     {
@@ -60,7 +60,7 @@ export const posts = [
       src: 'img/aws2.jpg',
       alt: 'ACRTP',
       title: 'Intro to AWS IAM Enumeration',
-      desc: 'This is a walkthrough of the Intro to AWS IAM Enumeration lab from PwnedLabs.',
+      desc: 'Get comfortable with AWS Identity and Access Management (IAM) using the AWS CLI.',
       type: 'AWS'
     },
     {
@@ -84,7 +84,7 @@ export const posts = [
       src: 'img/xor2.png',
       alt: 'W1seGuy',
       title: 'TryHackMe W1seGuy',
-      desc: 'This room is a CTF style cryptography challenge that focuses on the XOR operator.',
+      desc: 'CTF style cryptography challenge that focuses on the XOR operator.',
       type: 'TryHackMe'
     },
     {
@@ -92,7 +92,7 @@ export const posts = [
       src: '/img/api.png',
       alt: 'Traverse',
       title: 'Tryhackme Traverse',
-      desc: 'This room is a CTF style application security challenge that includes API hacking, python scripting, and command injection.',
+      desc: 'CTF style application security challenge that includes API hacking, python scripting, and command injection.',
       type: 'TryHackMe'
     },
     {
@@ -100,7 +100,7 @@ export const posts = [
       src: '/img/uranium.png',
       alt: 'Uranium',
       title: 'Tryhackme Uranium CTF',
-      desc: 'This room includes OSINT, phishing, wireshark forensics, and SUIDs.',
+      desc: 'Expore OSINT, phishing, wireshark forensics, and SUIDs.',
       type: 'TryHackMe'
     },
     {
@@ -108,7 +108,7 @@ export const posts = [
       src: '/img/b99.jpg',
       alt: 'Brooklyn Nine Nine',
       title: 'Tryhackme Brooklyn Nine Nine',
-      desc: 'This is a beginner room that includes anonymous ftp login, steganography, and linux privilege escalation.',
+      desc: 'Exploiting anonymous ftp login, steganography, and linux privilege escalation.',
       type: 'TryHackMe'
     },
     {
@@ -116,7 +116,7 @@ export const posts = [
       src: '/img/ad.jpg',
       alt: 'TraAttacktive Directoryverse',
       title: 'Tryhackme Attacktive Directory',
-      desc: 'This room covers exploiting an active directory domain controller.',
+      desc: 'Exploiting an active directory domain controller.',
       type: 'TryHackMe'
     },
     {
@@ -124,7 +124,7 @@ export const posts = [
       src: '/img/alice.jpg',
       alt: 'Looking Glass',
       title: 'Tryhackme Looking Glass',
-      desc: 'This room covers cryptography, linux enumeration, lateral and vertical privilege escalation.',
+      desc: 'Cryptography, linux enumeration, lateral and vertical privilege escalation.',
       type: 'TryHackMe'
     },
     {
@@ -132,7 +132,7 @@ export const posts = [
       src: '/img/nerdherd.png',
       alt: 'NerdHerd',
       title: 'Tryhackme NerdHerd',
-      desc: 'This room is a ctf style challenge that covers ftp anonymous login, smb enumeration, vigenere ciphers, and a linux kernel privilege escalation.',
+      desc: 'Exploiting ftp anonymous login, smb enumeration, vigenere ciphers, and a linux kernel privilege escalation.',
       type: 'TryHackMe'
     },
     {
@@ -140,7 +140,7 @@ export const posts = [
       src: '/img/git.png',
       alt: 'Git Happens',
       title: 'Tryhackme Git Happens',
-      desc: 'This room covers enumerating a public git repository.',
+      desc: 'Enumerating a public git repository.',
       type: 'TryHackMe'
     },
     {
@@ -148,7 +148,7 @@ export const posts = [
       src: '/img/kenobi.png',
       alt: 'Kenobi',
       title: 'Tryhackme Kenobi',
-      desc: 'This room covers samba enumeration, ftp exploitation, and linux privilege escalation.',
+      desc: 'Samba enumeration, ftp exploitation, and linux privilege escalation.',
       type: 'TryHackMe'
     },
     {
@@ -156,7 +156,7 @@ export const posts = [
       src: '/img/wonder.png',
       alt: 'Wonderland',
       title: 'Tryhackme Wonderland',
-      desc: 'This room covers python library hijacking, linux enumeration, and privilege escalation.',
+      desc: 'Explore python library hijacking, linux enumeration, and privilege escalation.',
       type: 'TryHackMe'
     },
     {
@@ -164,7 +164,7 @@ export const posts = [
       src: 'img/inclus.png',
       alt: 'Inclusion',
       title: 'Tryhackme Inclusion',
-      desc: 'This room is for practice with Local File Inclusion (LFI) attacks.',
+      desc: 'Practice with Local File Inclusion (LFI) attacks.',
       type: 'TryHackMe'
     },
     {
@@ -172,7 +172,7 @@ export const posts = [
       src: 'img/easyp.png',
       alt: 'Easy Peasy',
       title: 'Tryhackme Easy Peasy',
-      desc: 'This room is for practice locating a hidden directory to get initial access to a vulnerable machine, and escalating privileges using a crontab.',
+      desc: 'Practice locating a hidden directory to get initial access to a vulnerable machine, and escalating privileges using a crontab.',
       type: 'TryHackMe'
     }
 ]
