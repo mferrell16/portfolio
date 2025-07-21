@@ -1,66 +1,74 @@
 export const posts = [
+	{
+    link: 'https://medium.com/@makayla.b.ferrell/bypass-restrictions-in-api-gateway-acrtp-783a2f3b7400',
+    src: 'img/apiG.png',
+    alt: 'ACRTP',
+    title: 'Bypass Restrictions in API Gateway',
+    desc: 'Using AWS API Gateway misconfigurations to gain unauthorized access to production environments.',
+    type: 'AWS'
+  },
+  {
+    link: 'https://medium.com/@makayla.b.ferrell/ssrf-to-pwned-acrtp-103a79ac28c7',
+    src: 'img/ssrf.jpeg',
+    alt: 'ACRTP',
+    title: 'SSRF to Pwned',
+    desc: 'Exploiting a Server-Side Request Forgery (SSRF) vulnerability to extract sensitive files from an S3 bucket.',
+    type: 'AWS'
+  },
+   {
+      link: 'https://medium.com/@makayla.b.ferrell/looting-public-ebs-snapshots-acrtp-ec1732d5cf89',
+      src: 'img/aws.jpg',
+      alt: 'ACRTP',
+      title: 'Looting Public EBS Snapshots',
+      desc: 'Enumerating EBS snapshots and exfiltrating data.',
+      type: 'AWS'
+    },
   {
     link: 'https://medium.com/@makayla.b.ferrell/escalate-privileges-by-iam-policy-rollback-acrtp-387871fe2dc3',
     src: 'img/aws.jpg',
     alt: 'ACRTP',
-    title: 'Escalate Privileges by IAM Policy Rollback (ACRTP)',
-    desc: 'This is a walkthrough of the Escalate Privileges by IAM Policy Rollback lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+    title: 'Escalate Privileges by IAM Policy Rollback',
+    desc: 'Exploiting IAM policy version control and password cracking zip files',
     type: 'AWS'
   },
   {
     link: 'https://medium.com/@makayla.b.ferrell/assume-privileged-role-with-external-id-acrtp-d694b351e9eb',
     src: 'img/privleged-role.png',
     alt: 'ACRTP',
-    title: 'Assume Privileged Role with External ID (ACRTP)',
-    desc: 'This is a walkthrough of the Assume Privileged Role with External ID lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+    title: 'Assume Privileged Role with External ID',
+    desc: 'Using IAM policy and aws-enumerator to escalate privileges within an AWS environment.',
     type: 'AWS'
   },
-  {
-    link: 'https://medium.com/@makayla.b.ferrell/ssrf-to-pwned-acrtp-103a79ac28c7',
-    src: 'img/ssrf-pwned.png',
-    alt: 'ACRTP',
-    title: 'SSRF to Pwned (ACRTP)',
-    desc: 'This is a walkthrough of the SSRF to Pwned lab from PwnedLabs, part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
-    type: 'AWS'
-  },
+    {
+      link: 'https://medium.com/@makayla.b.ferrell/acrtp-hunting-for-secrets-in-git-repos-b31d8e635d07',
+      src: 'img/aws5.jpg',
+      alt: 'ACRTP',
+      title: 'Hunting for Secrets in Git Repos',
+      desc: 'Discovering secrets hidden in a Git repository and using them to access an AWS S3 bucket.',
+      type: 'AWS'
+    },
   {
       link: 'https://medium.com/@makayla.b.ferrell/s3-enumeration-basics-acrtp-6e1df9ecbb07',
-      src: 'img/aws6.jpg',
+      src: 'img/awss3.jpg',
       alt: 'ACRTP',
-      title: 'S3 Enumeration Basics (ACRTP)',
-      desc: 'This is a walkthrough of the S3 Enumeration Basics lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      title: 'S3 Enumeration Basics',
+      desc: 'This is a walkthrough of the S3 Enumeration Basics lab from PwnedLabs.',
       type: 'AWS'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/intro-to-aws-iam-enumeration-acrtp-c0e140ebc9d8',
       src: 'img/aws2.jpg',
       alt: 'ACRTP',
-      title: 'Intro to AWS IAM Enumeration (ACRTP)',
-      desc: 'This is a walkthrough of the Intro to AWS IAM Enumeration lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      title: 'Intro to AWS IAM Enumeration',
+      desc: 'This is a walkthrough of the Intro to AWS IAM Enumeration lab from PwnedLabs.',
       type: 'AWS'
     },
     {
       link: 'https://medium.com/@makayla.b.ferrell/identifying-the-aws-account-id-from-a-public-s3-bucket-acrtp-0f93e538e731',
       src: 'img/aws3.jpg',
       alt: 'ACRTP',
-      title: 'Identifying the AWS Account ID from a Public S3 Bucket (ACRTP)',
-      desc: 'This is a walkthrough of the Identifying the AWS Account ID from a Public S3 Bucket lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
-      type: 'AWS'
-    },
-    {
-      link: 'https://medium.com/@makayla.b.ferrell/looting-public-ebs-snapshots-acrtp-ec1732d5cf89',
-      src: 'img/aws.jpg',
-      alt: 'ACRTP',
-      title: 'Looting Public EBS Snapshots (ACRTP)',
-      desc: 'This is a walkthrough of the Looting Public EBS Snapshots lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
-      type: 'AWS'
-    },
-    {
-      link: 'https://medium.com/@makayla.b.ferrell/acrtp-hunting-for-secrets-in-git-repos-b31d8e635d07',
-      src: 'img/aws5.jpg',
-      alt: 'ACRTP',
-      title: 'Hunting for Secrets in Git Repos (ACRTP)',
-      desc: 'This is a walkthrough of the Hunting for Secrets in Git Repos lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+      title: 'Identifying the AWS Account ID from a Public S3 Bucket',
+      desc: 'Understanding the s3-account-search tool.',
       type: 'AWS'
     },
     {
