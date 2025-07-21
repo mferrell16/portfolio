@@ -1,5 +1,29 @@
 export const posts = [
-    {
+  {
+    link: 'https://medium.com/@makayla.b.ferrell/escalate-privileges-by-iam-policy-rollback-acrtp-387871fe2dc3',
+    src: 'img/aws.jpg',
+    alt: 'ACRTP',
+    title: 'Escalate Privileges by IAM Policy Rollback (ACRTP)',
+    desc: 'This is a walkthrough of the Escalate Privileges by IAM Policy Rollback lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+    type: 'AWS'
+  },
+  {
+    link: 'https://medium.com/@makayla.b.ferrell/assume-privileged-role-with-external-id-acrtp-d694b351e9eb',
+    src: 'img/privleged-role.png',
+    alt: 'ACRTP',
+    title: 'Assume Privileged Role with External ID (ACRTP)',
+    desc: 'This is a walkthrough of the Assume Privileged Role with External ID lab from PwnedLabs, which is part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+    type: 'AWS'
+  },
+  {
+    link: 'https://medium.com/@makayla.b.ferrell/ssrf-to-pwned-acrtp-103a79ac28c7',
+    src: 'img/ssrf-pwned.png',
+    alt: 'ACRTP',
+    title: 'SSRF to Pwned (ACRTP)',
+    desc: 'This is a walkthrough of the SSRF to Pwned lab from PwnedLabs, part of the Amazon Cloud Red Team Professional (ACRTP) bootcamp.',
+    type: 'AWS'
+  },
+  {
       link: 'https://medium.com/@makayla.b.ferrell/s3-enumeration-basics-acrtp-6e1df9ecbb07',
       src: 'img/aws6.jpg',
       alt: 'ACRTP',
