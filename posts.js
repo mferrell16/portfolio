@@ -25,7 +25,7 @@ export const posts = [
     },
   {
     link: 'https://medium.com/@makayla.b.ferrell/escalate-privileges-by-iam-policy-rollback-acrtp-387871fe2dc3',
-    src: 'img/aws.jpg',
+    src: 'img/aws5.jpg',
     alt: 'ACRTP',
     title: 'Escalate Privileges by IAM Policy Rollback',
     desc: 'Exploiting IAM policy version control and password cracking zip files',
@@ -41,7 +41,7 @@ export const posts = [
   },
     {
       link: 'https://medium.com/@makayla.b.ferrell/acrtp-hunting-for-secrets-in-git-repos-b31d8e635d07',
-      src: 'img/aws5.jpg',
+      src: 'img/gitaws.png',
       alt: 'ACRTP',
       title: 'Hunting for Secrets in Git Repos',
       desc: 'Discovering secrets hidden in a Git repository and using them to access an AWS S3 bucket.',
