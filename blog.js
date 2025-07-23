@@ -28,6 +28,27 @@ aiBtn.addEventListener("click", () => {
 })
 function getBlogPostsHtml() {
   return posts.map((post) => {
+    if (postsToRender === "all"){
+      allBtn.classList.add("bg-[var(--secondary-color)]");
+      thmBtn.classList.remove("bg-[var(--secondary-color)]");
+      awsBtn.classList.remove("bg-[var(--secondary-color)]");
+      aiBtn.classList.remove("bg-[var(--secondary-color)]");
+    } else if (postsToRender === "TryHackMe") {
+      thmBtn.classList.add("bg-[var(--secondary-color)]");
+      allBtn.classList.remove("bg-[var(--secondary-color)]");
+      awsBtn.classList.remove("bg-[var(--secondary-color)]");
+      aiBtn.classList.remove("bg-[var(--secondary-color)]");
+    } else if (postsToRender === "AWS") {
+      awsBtn.classList.add("bg-[var(--secondary-color)]");
+      allBtn.classList.remove("bg-[var(--secondary-color)]");
+      thmBtn.classList.remove("bg-[var(--secondary-color)]");
+      aiBtn.classList.remove("bg-[var(--secondary-color)]");
+    } else if (postsToRender === "AI") {
+      aiBtn.classList.add("bg-[var(--secondary-color)]");
+      allBtn.classList.remove("bg-[var(--secondary-color)]");
+      thmBtn.classList.remove("bg-[var(--secondary-color)]");
+      awsBtn.classList.remove("bg-[var(--secondary-color)]");
+    }
     if (post.type === postsToRender || postsToRender === "all") {
       return `
             <a href="${post.link}" target="_blank" class="flex flex-1">
