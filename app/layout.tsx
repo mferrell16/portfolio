@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className="max-w-5xl mx-auto flex flex-col">
+      <body className="max-w-5xl min-h-screen mx-auto flex flex-col">
         <Header />
         {children}
         <Footer />
