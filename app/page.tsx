@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Post, posts } from "@/data/posts";
+import PostCard from "@/components/PostCard";
 
 export default function Home() {
+  const latestPosts: Post[] = posts.slice(0, 3);
+
   return (
     <main>
       {/*Hero Section*/}
@@ -21,6 +25,7 @@ export default function Home() {
         </div>
         <div className="md:flex md:justify-end">
           <Image
+            loading="eager"
             className="rounded-lg md:size-4/5"
             height={900}
             width={600}
@@ -34,10 +39,11 @@ export default function Home() {
         <h2 className="text-center md:text-left text-xl md:text-2xl font-bold mb-4">
           Latest Blog Posts
         </h2>
-        <div
-          className="flex flex-col gap-4 md:flex-row"
-          id="featured-posts"
-        ></div>
+        <div className="flex flex-col gap-4 md:flex-row">
+          {latestPosts.map((post: Post) => {
+            return <PostCard key={post.link} post={post} />;
+          })}
+        </div>
         <div className="flex justify-center my-4">
           <Link
             className="bg-primary hover:bg-secondary rounded-md px-2 py-1 duration-300 ease-in-out"
