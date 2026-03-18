@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <footer className="flex items-center justify-center w-full py-4">
-      <p className="text-gray-font text-center text-sm">
+      <p className="text-gray-font text-center text-xs md:text-sm">
         Copyright &copy; {currentYear} MakaylaDecoded. All rights reserved.
       </p>
     </footer>
