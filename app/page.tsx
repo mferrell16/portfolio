@@ -19,11 +19,12 @@ export default function Home() {
             been up to!
           </p>
         </div>
-        <div className="relative w-full h-100 md:w-1/2 md:flex md:justify-end">
+        <div className="md:flex md:justify-end">
           <Image
             className="rounded-lg md:size-4/5"
-            fill
-            src="/img/grad.JPG"
+            height={900}
+            width={600}
+            src="/img/grad.webp"
             alt="Makayla Ferrell graduation photo"
           />
         </div>
