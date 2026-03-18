@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const poppins: NextFontWithVariable = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -23,7 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className="min-h-full flex flex-col">
+      <body className="max-w-5xl mx-auto flex flex-col">
+        <Header />
         {children}
         <Footer />
       </body>
