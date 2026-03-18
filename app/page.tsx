@@ -4,7 +4,7 @@ import { Post, posts } from "@/data/posts";
 import PostCard from "@/components/PostCard";
 
 export default function Home() {
-  const latestPosts: Post[] = posts.slice(0, 3);
+  const latestPosts: Post[] = posts.filter(post => post.type === "TryHackMe" || post.type === "AI").slice(0, 3);
 
   return (
     <main>
@@ -12,7 +12,7 @@ export default function Home() {
       <section className="container mx-auto mb-10 gap-6 max-sm:px-6 flex flex-col justify-center items-center md:flex-row md:justify-between">
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-8 leading-12">
-            Hi, I'm <span className="text-primary">Makayla Ferrell.</span>
+            Hi, I&#39;m <span className="text-primary">Makayla Ferrell.</span>
             <br />
             This is my life <span className="text-primary">Decoded.</span>
           </h1>
@@ -41,7 +41,7 @@ export default function Home() {
         </h2>
         <div className="flex flex-col gap-4 md:flex-row">
           {latestPosts.map((post: Post) => {
-            return <PostCard key={post.link} post={post} />;
+            return <PostCard key={post.id} post={post} />;
           })}
         </div>
         <div className="flex justify-center my-4">
