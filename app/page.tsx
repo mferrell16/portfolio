@@ -23,9 +23,9 @@ export default function Home() {
             been up to!
           </p>
         </div>
-        <div className="md:flex md:justify-end">
+        <div className="md:w-1/2 md:flex md:justify-end">
           <Image
-            loading="eager"
+            priority
             className="rounded-lg md:size-4/5"
             height={900}
             width={600}
@@ -41,13 +41,13 @@ export default function Home() {
         </h2>
         <div className="flex flex-col gap-4 md:flex-row">
           {latestPosts.map((post: Post) => {
-            return <PostCard key={post.id} post={post} />;
+            return <PostCard key={post.link} post={post} />;
           })}
         </div>
         <div className="flex justify-center my-4">
           <Link
             className="bg-primary hover:bg-secondary rounded-md px-2 py-1 duration-300 ease-in-out"
-            href="/blog.html"
+            href="/blog"
           >
             View All
           </Link>
