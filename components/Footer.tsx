@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex items-center justify-center w-full py-4">
+    <footer className="flex items-center justify-center w-full py-4 px-4">
       <p className="text-gray-font text-center text-xs md:text-sm">
         Copyright &copy; {currentYear} MakaylaDecoded. All rights reserved.
       </p>

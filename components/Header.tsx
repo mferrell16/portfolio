@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center w-full py-4">
+    <header className="flex justify-between items-center w-full py-4 px-4">
       <div className="text-lg font-bold">
         <Link href="/" className="md:hidden">
           M<span className="text-primary">D</span>
