@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       {/*Hero Section*/}
-      <section className="container mx-auto mb-10 gap-6 max-sm:px-6 flex flex-col justify-center items-center md:flex-row md:justify-between">
+      <section className="mx-auto mb-10 gap-6 px-4 flex flex-col justify-center items-center md:flex-row md:justify-between">
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-8 leading-12">
             Hi, I&#39;m <span className="text-primary">Makayla Ferrell.</span>
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </section>
       {/*Latest Blogs*/}
-      <section className="container mx-auto max-sm:px-6 mb-10">
+      <section className="container mx-auto px-4 mb-10">
         <h2 className="text-center md:text-left text-xl md:text-2xl font-bold mb-4">
           Latest Blog Posts
         </h2>
