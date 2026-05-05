@@ -10,9 +10,10 @@
 @layer base {
   html {
     @apply scroll-smooth;
+    scrollbar-gutter: stable;
   }
   body {
-    font-family: var(--font-poppins), sans-serif;
+    font-family: sans-serif;
     @apply text-white bg-gray-background;
   }
 }
