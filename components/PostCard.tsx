@@ -19,6 +19,7 @@ export default function PostCard({ post }: PostCardProps) {
             alt={post.alt}
             src={post.src}
             fill
+            sizes="(max-width: 768px) 100vw, 33vw"
           />
         </div>
         <div className="px-4 pb-4">

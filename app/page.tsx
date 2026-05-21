@@ -26,7 +26,7 @@ export default function Home() {
         <div className="md:w-1/2 md:flex md:justify-end">
           <Image
             priority
-            className="rounded-lg md:size-4/5"
+            className="rounded-lg w-full h-auto"
             height={900}
             width={600}
             src="/img/grad.webp"
