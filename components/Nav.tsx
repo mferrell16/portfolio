@@ -8,10 +8,12 @@ import { Menu, X } from "lucide-react";
 export default function Nav() {
   const pathName = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(pathName);
 
-  useEffect(() => {
+  if (pathName !== menuPath) {
+    setMenuPath(pathName);
     setIsOpen(false);
-  }, [pathName]);
+  }
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
