@@ -54,7 +54,7 @@ export default function Nav() {
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
       >
-        {isOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
+        {isOpen ? <HiX className="w-6 h-6 text-primary" /> : <HiMenu className="w-6 h-6 text-primary" />}
       </button>
 
       {/* Mobile menu overlay */}
