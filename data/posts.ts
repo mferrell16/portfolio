@@ -87,7 +87,6 @@ export const posts: Post[] = [
     title: "Prompt Hacking Gandalf AI",
     desc: "Use prompt injection to bypass Gandalf AI.",
     type: "AI",
-    
   },
   {
     link: "https://medium.com/@makayla.b.ferrell/tryhackme-w1seguy-726d45081a4c",
@@ -110,7 +109,7 @@ export const posts: Post[] = [
     src: "/img/thumbnails/uranium.png",
     alt: "Uranium",
     title: "Tryhackme Uranium CTF",
-    desc: "Expore OSINT, phishing, wireshark forensics, and SUIDs.",
+    desc: "Explore OSINT, phishing, wireshark forensics, and SUIDs.",
     type: "TryHackMe",
   },
   {
@@ -118,13 +117,13 @@ export const posts: Post[] = [
     src: "/img/thumbnails/b99.jpg",
     alt: "Brooklyn Nine Nine",
     title: "Tryhackme Brooklyn Nine Nine",
-    desc: "Exploiting anonymous ftp login, steganography, and linux privilege escalation.",
+    desc: "Exploiting anonymous ftp login, steganography, and Linux privilege escalation.",
     type: "TryHackMe",
   },
   {
     link: "https://medium.com/@makayla.b.ferrell/tryhackme-attacktive-directory-8a4eeee05ea4",
     src: "/img/thumbnails/ad.jpg",
-    alt: "TraAttacktive Directoryverse",
+    alt: "Tryhackme Attacktive Directory",
     title: "Tryhackme Attacktive Directory",
     desc: "Exploiting an active directory domain controller.",
     type: "TryHackMe",
@@ -134,7 +133,7 @@ export const posts: Post[] = [
     src: "/img/thumbnails/alice.jpg",
     alt: "Looking Glass",
     title: "Tryhackme Looking Glass",
-    desc: "Cryptography, linux enumeration, lateral and vertical privilege escalation.",
+    desc: "Cryptography, Linux enumeration, lateral and vertical privilege escalation.",
     type: "TryHackMe",
   },
   {
@@ -142,7 +141,7 @@ export const posts: Post[] = [
     src: "/img/thumbnails/nerdherd.png",
     alt: "NerdHerd",
     title: "Tryhackme NerdHerd",
-    desc: "Exploiting ftp anonymous login, smb enumeration, vigenere ciphers, and a linux kernel privilege escalation.",
+    desc: "Exploiting ftp anonymous login, smb enumeration, vigenère ciphers, and a Linux kernel privilege escalation.",
     type: "TryHackMe",
   },
   {
@@ -166,7 +165,7 @@ export const posts: Post[] = [
     src: "/img/thumbnails/wonder.png",
     alt: "Wonderland",
     title: "Tryhackme Wonderland",
-    desc: "Explore python library hijacking, linux enumeration, and privilege escalation.",
+    desc: "Explore python library hijacking, Linux enumeration, and privilege escalation.",
     type: "TryHackMe",
   },
   {
