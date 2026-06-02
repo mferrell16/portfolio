@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #c0aee0;
+  --color-secondary: #7b5ead;
+  --color-gray-font: #b2becd;
+  --color-gray-background: #191d2b;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    scrollbar-gutter: stable;
+  }
+  body {
+    font-family: sans-serif;
+    @apply text-white bg-gray-background;
+  }
+}
+
+
+/*body {*/
+/*  font-family: 'Poppins', sans-serif;*/
+/*  background-color: #191d2b;*/
+/*  color: #fff;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
