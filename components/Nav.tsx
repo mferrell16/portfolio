@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { HiMenu, HiX } from "react-icons/hi";
 
 export default function Nav() {
   const pathName = usePathname();
@@ -54,7 +54,7 @@ export default function Nav() {
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
       >
-        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        {isOpen ? <HiX className="w-6 h-6 text-primary" /> : <HiMenu className="w-6 h-6 text-primary" />}
       </button>
 
       {/* Mobile menu overlay */}
